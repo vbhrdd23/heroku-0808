@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: cheer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: cheer
   template:
     metadata:
       labels:
-        app: ray
+        app: cheer
     spec:
       containers:
       - image: okteto.dev/ray:latest
-        name: ray
+        name: cheer
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "b52e66c6-ab73-45fb-9f09-206fa3f22dec"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vl532fas"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "b52e66c6-ab73-45fb-9f09-206fa3f22dec"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vm63236"
         - name: Share_Path
           value: "/v2link"
